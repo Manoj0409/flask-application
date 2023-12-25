@@ -2,9 +2,9 @@
 
 Install the dependencies to run this application
 
-apt-get install python3 -y
-apt-get install python3-pip -y
-pip install flask
+1.apt-get install python3 -y
+2.apt-get install python3-pip -y
+3.pip install flask
 
 # RUN this application
 python app.py
