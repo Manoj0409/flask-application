@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello World!!"
+    return "Hello!! Your Flask application has been deployed successfully."
 
 
 if __name__ == "__main__":
