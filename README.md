@@ -27,5 +27,4 @@ create the container using the image that you build.
 push the image to docker hub.
 
 # DO this process in CI/CD flow to automate
-i'm using jenkins as ci/cd in this task
-created the job using declarative pipeline.
+i'm using jenkins as ci/cd in this task,created the job using declarative pipeline.
