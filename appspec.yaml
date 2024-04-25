@@ -3,11 +3,11 @@ os: linux
 
 hooks:
   BeforeInstall:
-    - location: stop_container.sh
+    - location: apt install docker.io -y
       timeout: 300
       runas: root
       
   ApplicationStart:
-    - location: start_container.sh
+    - location: docker run -dit --name flask -p 5000:5000 nginx:latest
       timeout: 300
       runas: root
