@@ -2,16 +2,13 @@ version: 0.0
 os: linux
 
 hooks:
-  BeforeInstall:
-    - timeout: 300
+  Applicationstop:
+    - location: scripts/stop_container.sh
+      timeout: 300
       runas: root
-      commands:
-       - apt update
-       - apt install dcoker.io -y
-       - docker pull lakshmimanoj/flask:v2
       
   ApplicationStart:
-    - timeout: 300
+    - location: scripts/start_container.sh
+      timeout: 300
       runas: root
-      commands:
-       - docker run -dit --name flask -p 5000:5000 nginx:latest
+      
